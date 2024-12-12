@@ -35,7 +35,7 @@ export default function App() {
   });
 
   useEffect(() => {
-    const eventSource = new EventSource("/api/events");
+    const eventSource = new EventSource("https://sse.milind.app/api/events");
 
     eventSource.addEventListener("stats", (e) => {
       const newStats = JSON.parse(e.data);
