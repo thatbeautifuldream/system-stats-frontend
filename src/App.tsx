@@ -25,7 +25,7 @@ interface Process {
   memoryUsage: number;
 }
 
-function App() {
+export default function App() {
   const [stats, setStats] = useState<SystemStats>({
     cpuUsage: 0,
     memUsage: 0,
@@ -143,5 +143,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
